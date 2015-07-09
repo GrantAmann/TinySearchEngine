@@ -1,0 +1,46 @@
+Beginning test of crawler
+started at 23:43 on 05/06/2015
+clean first...
+implementing our Makefile...
+ex 1. If no arguemnts are passed with it
+crawler
+You must have 3 inputs along with the command.  Please try again
+ex 2. If not enough arguments are passed with it
+crawler www.dartmouth.edu data
+You must have 3 inputs along with the command.  Please try again
+ex 3: If too many arguments are passed with it
+crawler www.dartmouth.edu data 5 help
+You must have 3 inputs along with the command.  Please try again
+ex 4: If the input url is not valid
+crawler www.lalablahfake.com data 2
+The url that you entered was invalid.  Please try again.
+ex 5: If the input for directory is invalid (meaning it doesn't exist)
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse fakedir 2
+Make sure that the directory exists.  Please try again
+ex 6: If the input for depth is not within 0 and 4
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse data 5
+The third input must uphold the max depth limit of 4.  Please try again
+ex 7: If the input for depth is not an integer
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse data hi
+Please make sure that your third input is an integer
+ex 8: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/ at depth 0
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/ data 0
+
+ex 9: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/ at depth 1
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/ data 1
+
+ex 10: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/ at depth 2
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/ data 2
+
+ex 11: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html at depth 0
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html data 0
+
+ex 12: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html at depth 1
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html data 1
+
+ex 13: Correct inputs using http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html at depth 2
+crawler http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html data 2
+
+checking to make to sure that files are correctly made
+ls data | wc -w
+849

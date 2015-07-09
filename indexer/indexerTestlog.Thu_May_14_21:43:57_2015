@@ -1,0 +1,46 @@
+Beginning test of indexer
+starting at 21:43 on 05/14/2015
+
+clean first...
+make clean
+
+implementing our Makefile...
+make
+
+ex 1. If no arguments are passed with it
+indexer
+Make sure that you have either 3 or 5 arguments.  Please try again
+
+ex 2. If not enough arguments are passed with it
+indexer blah
+Make sure that you have either 3 or 5 arguments.  Please try again
+
+ex 3. If too many arguments are passed with it
+indexer data index.dat index.dat new_index.dat blah
+Make sure that you have either 3 or 5 arguments.  Please try again
+
+ex 4. If the input for directory is invalid (meaning it doesn't exist)
+indexer blah index.dat
+Make sure that the directory exists.  Please try again
+
+ex 5. Correct inputs using 3 arguments and the directory data
+indexer data index.dat
+
+ex 6. If the target file already exists
+indexer data index.dat
+Make sure that the file you're writing to doesn't already exist.  Please try again
+
+ex 7. Correct inputs using 5 arguments and the directory data
+indexer data index.dat index.dat new_index.dat
+
+
+checking to make sure that the first file and second file are the same by running
+if cmp -s index.dat new_index.dat
+then
+   echo The files match 
+else
+   echo The files are different 
+fi
+
+running.....
+The files match

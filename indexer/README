@@ -1,0 +1,23 @@
+README
+Author: Sean Oh
+CS50 - Spring 2015
+Assignment: indexer
+Platform: MAC OSX Version 10.10.2
+
+How to compile:
+Run the Makefile
+
+How to run:
+In the Shell, enter:
+indexer [TARGET DIR] [INDEX FILE 1] [INDEX FILE 2] [NEW INDEX FILE]
+where the target dir, index file 1, index file 2, and new index file follow the requirements described below*
+
+If the program is propoerly called, the files in the directory will be read and all the html code found in those files will be parsed through.  Then a new file "INDEX FILE" will be created that holds an inverted index with line formats "word numberOfFiles doc_id freq ..."
+
+*Requirements:
+- the target dir but be valid
+- there must be files in the target dir
+- index file 1 must not exist yet because we don't want to write over an existing file
+- index file 2 must already exist or be the same as index file 1
+- new index file must not exist yet becauase we don't want to write over an existing file
+- you can only run indexer if you have the first three arguments, or all five arguments

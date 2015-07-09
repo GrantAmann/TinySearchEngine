@@ -1,0 +1,21 @@
+README
+Author: Sean oh
+CS50 - Spring 2015
+Assignment: query
+Platform: MAC OSX Version 10.10.2
+
+How to compile:
+Run the Makefile
+
+How to run:
+In the Shell, enter:
+query [INDEX FILE] [SOURCE DIRECTORY]
+where the index file and source directory follow the requirements described below*
+
+If the program is properly called, the user will be prompted to input words that they would like to search for.  The program will then take the information that it has, looking at the given index file and the files in the source directory and will give the user a resulting list of url's ranked in order of relevant frequency.  The user will prompted to continue and will be able to do this as long as they desire until the decide to quit the program.
+
+*Requirements:
+- the index file must be valid and be the result of running "indexer".  Improper format will cause the program to misbehave
+- the source directory must be a validirectory that already exists
+- the source directory must have files in it
+- the files in the source directory must be the result of running "crawler".  Improper format will cause the program to misbehave

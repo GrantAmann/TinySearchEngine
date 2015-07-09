@@ -1,0 +1,30 @@
+Beginning unit testing of query functions
+starting at 12:34 on 05/23/2015
+
+queryTest ../../indexer/index.dat ../../crawler/data
+testing argcheck...
+
+testing addtolist
+adding the word hello
+printing the list
+hello
+
+testing insertDocList
+
+inserting the word Dartmouth
+printing result
+Document ID: 1  Frequency: 1
+Document ID: 2  Frequency: 1
+Document ID: 5  Frequency: 416
+
+testing printDocList
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+Document ID:2  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+Document ID:5  Frequency:416  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+
+
+testing sortDocList
+Document ID:5  Frequency:416  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+Document ID:2  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+

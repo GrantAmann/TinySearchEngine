@@ -1,0 +1,25 @@
+README
+Author: Sean Oh
+CS50 - Spring 2015
+Assignment: queryTest
+Platform: MAC OSX Version 10.10.2
+
+How to compile:
+***IMPORTANT***
+------------------------
+In order for it to work, you must first go into ../src/query.c and comment out the main function
+------------------------
+Run the Makefile
+
+How to run: 
+In the Shell, enter:
+queryTest [INDEX FILE] [SOURCE DIRECTORY]
+where the index file and source directory follow the requirements described below*
+
+If the program is properly called it will run and test all of the functions that were used for query.
+
+*Requirements:
+- the index file must be valid and be the result of running "indexer".  Improper format will cause the program to misbehave
+- the source directory must be a validirectory that already exists
+- the source directory must have files in it
+- the files in the source directory must be the result of running "crawler".  Improper format will cause the program to misbehave

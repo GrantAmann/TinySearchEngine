@@ -1,0 +1,112 @@
+Beginning test of query
+starting at 16:55 on 05/22/2015
+
+clean first...
+make clean
+
+implementing our Makefile...
+make
+
+ex 1. If no arguments are passed with it
+query
+Sorry, make sure that three arguments are passed. Please try again
+
+ex 2. If not enough arguments are passed with it
+query blah
+Sorry, make sure that three arguments are passed. Please try again
+
+ex 3. If too make arguments are passed with it
+query blah blah blah blah
+Sorry, make sure that three arguments are passed. Please try again
+
+ex 5. Invalid file
+query blah ../crawler/data
+Sorry, make sure that the file exists and can be opened.  Please try again
+
+ex 6. Invalid directory
+query ../indexer/index.dat blah
+Sorry, make sure that the directory exists.  Please try again
+
+ex 7. Correct inputs
+query ../indexer/index.dat .../crawler/data
+Dartmouth
+Please enter the words that you want to search for:
+Document ID:5  Frequency:416  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+Document ID:2  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+
+Please enter the words that you want to search for:
+
+ex 8. Correct inputs
+query ../indexer/index.dat .../crawler/data
+Dartmouth news
+Please enter the words that you want to search for:
+Document ID:5  Frequency:438  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:2  Frequency:3  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+
+Please enter the words that you want to search for:
+
+ex 9. Correct inputs
+query ../indexer/index.dat .../crawler/data
+Dartmouth AND news
+Please enter the words that you want to search for:
+Document ID:5  Frequency:438  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:2  Frequency:3  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+
+Please enter the words that you want to search for:
+
+ex 10. Correct inputs
+query ../indexer/index.dat .../crawler/data
+Dartmouth OR news
+Please enter the words that you want to search for:
+Document ID:5  Frequency:438  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:2  Frequency:3  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+Document ID:4  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Unix.html
+
+Please enter the words that you want to search for:
+
+ex 11. Correct inputs
+query ../indexer/index.dat .../crawler/data
+Dartmouth news OR Computer
+Please enter the words that you want to search for:
+Document ID:5  Frequency:443  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:2  Frequency:237  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+Document ID:7  Frequency:13  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Linked_list.html
+Document ID:3  Frequency:7  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/C_(programming_language).html
+Document ID:6  Frequency:7  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Hash_table.html
+Document ID:4  Frequency:6  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Unix.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+
+Please enter the words that you want to search for:
+
+ex 12. Correct inputs
+query ../indexer/index.dat .../crawler/data
+blahblahblah
+Please enter the words that you want to search for:
+
+Please enter the words that you want to search for:
+
+ex 13. Correct inputs
+query ../indexer/index.dat .../crawler/data
+blahblah OR Dartmouth
+Please enter the words that you want to search for:
+Document ID:5  Frequency:416  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+Document ID:2  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+
+Please enter the words that you want to search for:
+
+ex 14. Correct inputs
+query ../indexer/index.dat .../crawler/data
+or OR and
+Please enter the words that you want to search for:
+Document ID:5  Frequency:303  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Dartmouth_College.html
+Document ID:3  Frequency:262  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/C_(programming_language).html
+Document ID:2  Frequency:249  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Computer_science.html
+Document ID:7  Frequency:202  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Linked_list.html
+Document ID:4  Frequency:176  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Unix.html
+Document ID:6  Frequency:171  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/wiki/Hash_table.html
+Document ID:1  Frequency:1  URL:http://old-www.cs.dartmouth.edu/~cs50/tse/
+
+Please enter the words that you want to search for:
