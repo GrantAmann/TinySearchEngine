@@ -5,11 +5,17 @@ Assignment: tinySearchEngine
 Platform: MAC OSX Version 10.10.2
 
 How to compile:
-Run the Makfile
+Run the Makefile
 
 How to run:
 Refer to crawler's README on how to run crawler 
 Refer to indexer's README on how to run indexer
 Refer to query's README on how to run query
 
-Crawler and Indexer are the first two modules for tinySearchEngine.  Crawler will take a url and given a set depth, will venture the url going deeper and deeper until the max depth is reached.  Each url's html will be placed into individual files into the target directory.  Indexer will go into the directory and read each file, parsing through the html for individuals words.  Indexer will then figure out how many times each word appeared in each file and print out an inverted index to a file.  Lastly, query will then take the index from indexer and the files created from crawler and prompt the user to input words that they would like to search for.  Indexer will then give the user a list of url's ranked by the number of relevant matches.
+Crawler and Indexer are the first two modules for tinySearchEngine. 
+Crawler will take a url and given a set depth, will venture the url going deeper and deeper until the max depth is reached.
+Each url's html will be placed into individual files into the target directory.  
+Indexer will go into the directory and read each file, parsing through the html for individuals words.  
+Indexer will then figure out how many times each word appeared in each file and print out an inverted index to a file.  
+Lastly, query will then take the index from indexer and the files created from crawler and prompt the user to input words that they would like to search for. 
+Indexer will then give the user a list of url's ranked by the number of relevant matches.
